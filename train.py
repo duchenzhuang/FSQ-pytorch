@@ -81,7 +81,7 @@ def main():
                 save_image(make_grid(torch.cat([input_img, reconstructions]), nrow=input_img.shape[0]), args.save+'/samples/{}.jpg'.format(num_iter), normalize=True)
         
         # save checkpoints
-        if epoch % 5 == 0 and torch.distributed.get_rank() == 0:
+        if (epoch % 5 == 0 or (epoch == args.max_train_epochs -1) ) and torch.distributed.get_rank() == 0:
             torch.save({
                 'iter': num_iter,
                 'model_state_dict': model.state_dict(),
