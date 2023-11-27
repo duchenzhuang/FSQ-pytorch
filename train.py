@@ -6,7 +6,7 @@ from dataset import get_data_loaders
 from util import initialize_distributed, set_random_seed, mkdir_ckpt_dirs
 from scheduler import AnnealingLR
 from lpips import LPIPS
-from metric import get_ms_ssim, get_revd_perceptual
+from metric import get_revd_perceptual
 from torchvision.utils import save_image, make_grid
 
 def main():
