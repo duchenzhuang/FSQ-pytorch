@@ -3,6 +3,7 @@
 import argparse
 import os
 import torch
+from util import multiplyList
 
 def add_model_config_args(parser):
     """Model arguments"""
@@ -123,13 +124,7 @@ def add_loss_args(parser):
                        help='Weight of codebook loss.')
     return parser
  
-def multiplyList(myList):
- 
-    # Multiply elements one by one
-    result = 1
-    for x in myList:
-        result = result * x
-    return result
+
 
 def get_args():
     """Parse all the args."""

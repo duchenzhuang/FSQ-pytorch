@@ -42,3 +42,11 @@ def mkdir_ckpt_dirs(args):
             for arg, value in argsDict.items():
                 f.writelines(arg + ' : ' + str(value) + '\n')
             f.writelines('------------------- end -------------------' + '\n')
+
+def multiplyList(myList):
+ 
+    # Multiply elements one by one
+    result = 1
+    for x in myList:
+        result = result * x
+    return result

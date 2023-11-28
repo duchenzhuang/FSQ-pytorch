@@ -82,9 +82,11 @@ class VQVAE(nn.Module):
          
         
         
-    def forward(self, input):
-        quant_t, diff, _, = self.encode(input)
+    def forward(self, input, return_id=True):
+        quant_t, diff, id_t, = self.encode(input)
         dec = self.dec(quant_t)
+        if return_id:
+            return quant_t, diff, id_t
         return dec, diff
 
     def encode(self, input):
