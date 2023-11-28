@@ -1,5 +1,5 @@
 # FSQ-pytorch
-A Pytorch Implementation of Finite Scalar Quantization(https://arxiv.org/abs/2309.15505)
+A unoffical Pytorch Implementation of Finite Scalar Quantization(https://arxiv.org/abs/2309.15505)
 
 <img width="1700" alt="image" src="https://github.com/duchenzhuang/FSQ-pytorch/blob/main/figures/fsq_vis.png">
 
@@ -24,3 +24,4 @@ We evaluate several metrics on the validation set, and the results are shown in 
 | 4k | 0.2135 | 0.2299 | 100% |
 | 16k | 0.1917 | 0.1931 | 100% |
 | 64k | 0.1807 | 0.1761 | 99.94% |
+
