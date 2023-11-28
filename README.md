@@ -33,4 +33,4 @@ Comparison of input images and reconstructed images. The pictures comes from the
 
 ## Acknowledgement
 
-Our code draws heavily from the first stage (VQVAE training) of [CogView](https://arxiv.org/abs/2105.13290) and [Cogview2](https://arxiv.org/abs/2204.14217) and [vector-quantize-pytorch](https://github.com/lucidrains/vector-quantize-pytorch), and we would like to thank these teams for their selfless sharing. And we also thank Wendi Zheng and Ming Ding for their very constructive suggestions.
+Our code draws heavily from the first stage (VQVAE training) of [Cogview2](https://arxiv.org/abs/2204.14217) and [vector-quantize-pytorch](https://github.com/lucidrains/vector-quantize-pytorch), and we would like to thank these teams for their selfless sharing. And we also thank Wendi Zheng and Ming Ding for their very constructive suggestions.
