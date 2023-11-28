@@ -27,6 +27,8 @@ We evaluate several metrics on the validation set, and the results are shown in 
 
 ## Qualitative Results
 
+Comparison of input images and reconstructed images. The pictures comes from the valid set without any cherry pick.
+
 <img width="1700" alt="image" src="https://github.com/duchenzhuang/FSQ-pytorch/blob/main/figures/quality.png">
 
 ## Acknowledgement
