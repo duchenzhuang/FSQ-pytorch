@@ -86,7 +86,7 @@ class VQVAE(nn.Module):
         quant_t, diff, id_t, = self.encode(input)
         dec = self.dec(quant_t)
         if return_id:
-            return quant_t, diff, id_t
+            return dec, diff, id_t
         return dec, diff
 
     def encode(self, input):

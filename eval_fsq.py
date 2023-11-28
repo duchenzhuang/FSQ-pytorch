@@ -8,6 +8,7 @@ from metric import get_revd_perceptual
 from util import multiplyList
 
 from torchmetrics.image.fid import FrechetInceptionDistance
+from torchvision.utils import save_image, make_grid
 
 def main():
     args = get_args()
@@ -22,6 +23,7 @@ def main():
         batch_size=args.batch_size,
         num_workers=args.num_workers,
         drop_last=False,
+        shuffle=False
     )
     transform_rev = transforms.Normalize([-0.485 / 0.229, -0.456 / 0.224, -0.406 / 0.225], [1. / 0.229, 1. / 0.224, 1. / 0.225])
 
@@ -59,9 +61,12 @@ def main():
         # forward
         num_iter += 1
         print(num_iter*args.batch_size)
+
         with torch.no_grad():
             input_img = input_img.cuda(torch.cuda.current_device())
             reconstructions, codebook_loss, ids = model(input_img, return_id=True)
+            # save_image(make_grid(torch.cat([input_img, reconstructions]), nrow=input_img.shape[0]), 'figures/' + str(num_embed)+'.jpg', normalize=True)
+            # exit()
             ids = torch.flatten(ids)
             for quan_id in ids:
                 codebook_usage.add(quan_id.item())
