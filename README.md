@@ -25,3 +25,10 @@ We evaluate several metrics on the validation set, and the results are shown in 
 | 16k | 0.1917 | 0.1931 | 100% |
 | 64k | 0.1807 | 0.1761 | 99.94% |
 
+## Qualitative Results
+
+<img width="1700" alt="image" src="https://github.com/duchenzhuang/FSQ-pytorch/blob/main/figures/quality.png">
+
+## Acknowledgement
+
+Our code draws heavily from [CogView's](https://arxiv.org/abs/2105.13290) and  another [GitHub repository](https://github.com/lucidrains/vector-quantize-pytorch), and we would like to thank these teams for their selfless sharing. And we also thank Wendi Zheng and Ming Ding for their very constructive suggestions.
