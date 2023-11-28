@@ -31,4 +31,4 @@ We evaluate several metrics on the validation set, and the results are shown in 
 
 ## Acknowledgement
 
-Our code draws heavily from [CogView's](https://arxiv.org/abs/2105.13290) and  another [GitHub repository](https://github.com/lucidrains/vector-quantize-pytorch), and we would like to thank these teams for their selfless sharing. And we also thank Wendi Zheng and Ming Ding for their very constructive suggestions.
+Our code draws heavily from [CogView's](https://arxiv.org/abs/2105.13290) first stage (VQVAE training) and  another [GitHub repository](https://github.com/lucidrains/vector-quantize-pytorch), and we would like to thank these teams for their selfless sharing. And we also thank Wendi Zheng and Ming Ding for their very constructive suggestions.
