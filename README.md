@@ -11,7 +11,7 @@ We use the ImageNet dataset (128*128) for our experiments. The encoder we employ
 ## Training
 > CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node 8 train.py --quantizer fsq --levels 8 8 8 5 5 5
 
-The levels can also take on other values, as shown in the figure below.
+The levels can also take on other values, as shown in the table below.
 
 <img width="1700" alt="image" src="https://github.com/duchenzhuang/FSQ-pytorch/blob/main/figures/fsq_levels.png">
 
