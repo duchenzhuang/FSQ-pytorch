@@ -1,5 +1,5 @@
 # FSQ-pytorch
-A unoffical Pytorch Implementation of Finite Scalar Quantization (https://arxiv.org/abs/2309.15505)
+An unoffical Pytorch Implementation of Finite Scalar Quantization (https://arxiv.org/abs/2309.15505)
 
 <img width="1700" alt="image" src="https://github.com/duchenzhuang/FSQ-pytorch/blob/main/figures/fsq_vis.png">
 
