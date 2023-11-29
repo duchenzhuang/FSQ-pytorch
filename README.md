@@ -18,12 +18,12 @@ The levels can also take on other values, as shown in the table below.
 ## Quantitative Results
 We evaluate several metrics on the validation set, and the results are shown in the table below.
 
-| Codebook Size | L1 loss | Perceptual loss | Codebook Usage |
-| :----:| :----: | :----: | :----: |
-| 1k | 0.2319 | 0.2597 | 100% |
-| 4k | 0.2135 | 0.2299 | 100% |
-| 16k | 0.1917 | 0.1931 | 100% |
-| 64k | 0.1807 | 0.1761 | 99.94% |
+| Codebook Size | L1 loss | Perceptual loss | Codebook Usage | CKPT | levels |
+| :----:| :----: | :----: | :----: | :----: | :----: |
+| 1k | 0.2319 | 0.2597 | 100% | [CKPT](https://cloud.tsinghua.edu.cn/f/45c190e6b38943f6a1f4/?dl=1) | 8 5 5 5 |
+| 4k | 0.2135 | 0.2299 | 100% | [CKPT](https://cloud.tsinghua.edu.cn/f/dae9d48207d042e790f0/?dl=1) | 7 5 5 5 5 |
+| 16k | 0.1917 | 0.1931 | 100% | [CKPT](https://cloud.tsinghua.edu.cn/f/e362caa7ca5142d49847/?dl=1) | 8 8 8 6 5 |
+| 64k | 0.1807 | 0.1761 | 99.94% | [CKPT](https://cloud.tsinghua.edu.cn/f/f69b2c90572c4160ac71/?dl=1) | 8 8 8 5 5 5 |
 
 ## Qualitative Results
 
